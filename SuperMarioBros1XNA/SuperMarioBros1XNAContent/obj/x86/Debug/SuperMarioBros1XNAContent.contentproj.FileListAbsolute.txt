@@ -1,0 +1,3 @@
+c:\users\marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNAContent\obj\x86\Debug\SuperMarioBros1XNAContent.contentprojResolveAssemblyReference.cache
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNAContent\obj\x86\Debug\SuperMarioBros1XNAContent.contentprojResolveAssemblyReference.cache
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNAContent\obj\x86\Debug\SuperMarioBros1XNAContent.contentprojResolveAssemblyReference.cache

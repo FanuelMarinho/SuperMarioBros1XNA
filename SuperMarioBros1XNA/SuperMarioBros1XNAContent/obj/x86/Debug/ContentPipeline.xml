@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Textures\TileMap.png</Source>
+      <Name>Textures\TileMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\TileMap.xnb</Output>
+      <Time>2014-06-29T16:40:25.202916-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\tiles4.png</Source>
+      <Name>Textures\tiles4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\users\marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\tiles4.xnb</Output>
+      <Time>2014-07-01T21:42:43.3719546-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\mushroom.png</Source>
+      <Name>Textures\mushroom</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marinho\Documents\Visual Studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\mushroom.xnb</Output>
+      <Time>2014-05-29T22:13:18.0610327-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\bill.png</Source>
+      <Name>Textures\bill</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\bill.xnb</Output>
+      <Time>2014-05-31T19:28:19.3004507-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\mario.png</Source>
+      <Name>Textures\mario</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\mario.xnb</Output>
+      <Time>2014-07-04T12:03:19.6479753-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\goomba.png</Source>
+      <Name>Textures\goomba</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\goomba.xnb</Output>
+      <Time>2014-09-04T21:27:28.5802085-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\mario_die.png</Source>
+      <Name>Textures\mario_die</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marinho\Documents\Visual Studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\mario_die.xnb</Output>
+      <Time>2014-07-08T21:11:20.1798234-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\mario_idle.png</Source>
+      <Name>Textures\mario_idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marinho\Documents\Visual Studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\mario_idle.xnb</Output>
+      <Time>2014-07-08T21:06:17.4585088-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\mario_jump.png</Source>
+      <Name>Textures\mario_jump</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marinho\Documents\Visual Studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\mario_jump.xnb</Output>
+      <Time>2014-07-08T21:08:18.4394285-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\mario_run2.png</Source>
+      <Name>Textures\mario_run2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marinho\Documents\Visual Studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\mario_run2.xnb</Output>
+      <Time>2014-07-09T19:26:16.9989249-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\smb_jump_small.wav</Source>
+      <Name>Audio\smb_jump_small</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_jump_small.xnb</Output>
+      <Time>2014-08-11T21:25:16.7619934-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\smb_mario_die.wav</Source>
+      <Name>Audio\smb_mario_die</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_mario_die.xnb</Output>
+      <Time>2014-08-11T21:04:14.7438101-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\smb_overworld.mp3</Source>
+      <Name>Audio\smb_overworld</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld.xnb</Output>
+      <Extra>C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld.wma</Extra>
+      <Time>2014-08-11T21:11:01.9110987-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\smb_overworld2.mp3</Source>
+      <Name>Audio\smb_overworld2</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld2.xnb</Output>
+      <Extra>C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld2.wma</Extra>
+      <Time>2014-08-13T21:32:52.170636-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\smb_overworld21.mp3</Source>
+      <Name>Audio\smb_overworld21</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld21.xnb</Output>
+      <Extra>C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld21.wma</Extra>
+      <Time>2014-08-13T21:48:38.5207641-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\happiness.mp3</Source>
+      <Name>Audio\happiness</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\happiness.xnb</Output>
+      <Extra>C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\happiness.wma</Extra>
+      <Time>2014-06-30T21:07:33.7524939-03:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNAContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNAContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T11:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T11:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T11:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T11:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T11:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T11:41:18-03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-02-03T22:51:57.2742124-02:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

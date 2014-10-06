@@ -1,0 +1,85 @@
+c:\users\marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\SuperMarioBros1XNA.exe
+c:\users\marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\SuperMarioBros1XNA.pdb
+c:\users\marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\obj\x86\Debug\SuperMarioBros1XNA.csprojResolveAssemblyReference.cache
+c:\users\marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\obj\x86\Debug\SuperMarioBros1XNA.exe
+c:\users\marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\obj\x86\Debug\SuperMarioBros1XNA.pdb
+c:\users\marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\TileMap.xnb
+C:\Users\Marinho\Documents\Visual Studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\tiles4.xnb
+C:\Users\Marinho\Documents\Visual Studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\mushroom.xnb
+C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\bill.xnb
+C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\mario.xnb
+C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\goomba.xnb
+C:\Users\Marinho\Documents\Visual Studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Levels\world11.tmx
+C:\Users\Marinho\Documents\Visual Studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\mario_die.xnb
+C:\Users\Marinho\Documents\Visual Studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\mario_idle.xnb
+C:\Users\Marinho\Documents\Visual Studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\mario_jump.xnb
+C:\Users\Marinho\Documents\Visual Studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\mario_run2.xnb
+C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_jump_small.xnb
+C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_mario_die.xnb
+C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld.xnb
+C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld.wma
+C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld2.xnb
+C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld2.wma
+C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld21.xnb
+C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld21.wma
+C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\happiness.xnb
+C:\Users\Marinho\documents\visual studio 2012\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\happiness.wma
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\TileMap.xnb
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\tiles4.xnb
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\goomba.xnb
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\mario_die.xnb
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\mario_idle.xnb
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\mario_jump.xnb
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\mario_run2.xnb
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld2.xnb
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld.xnb
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld21.xnb
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\happiness.xnb
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_jump_small.xnb
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_mario_die.xnb
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld2.wma
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld.wma
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld21.wma
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\happiness.wma
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Levels\world11.tmx
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\SuperMarioBros1XNA.exe
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\SuperMarioBros1XNA.pdb
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\obj\x86\Debug\SuperMarioBros1XNA.csprojResolveAssemblyReference.cache
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\obj\x86\Debug\SuperMarioBros1XNA.exe
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\obj\x86\Debug\SuperMarioBros1XNA.pdb
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\goomba_die.xnb
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\goomba_run.xnb
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\koopa_run.xnb
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\koopa_shell_in.xnb
+C:\Users\Asimov\Documents\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\koopa_shell_out.xnb
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\TileMap.xnb
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\tiles4.xnb
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\goomba.xnb
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\mario_die.xnb
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\mario_idle.xnb
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\mario_jump.xnb
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\mario_run2.xnb
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\goomba_die.xnb
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\goomba_run.xnb
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\koopa_run.xnb
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\koopa_shell_in.xnb
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Textures\koopa_shell_out.xnb
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld2.xnb
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld.xnb
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld21.xnb
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\happiness.xnb
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_jump_small.xnb
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_mario_die.xnb
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld2.wma
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld.wma
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\smb_overworld21.wma
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Audio\happiness.wma
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\Content\Levels\world11.tmx
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\SuperMarioBros1XNA.exe
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\bin\x86\Debug\SuperMarioBros1XNA.pdb
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\obj\x86\Debug\SuperMarioBros1XNA.csprojResolveAssemblyReference.cache
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\obj\x86\Debug\SuperMarioBros1XNA.exe
+D:\Projects\SuperMarioBros1XNA\SuperMarioBros1XNA\SuperMarioBros1XNA\obj\x86\Debug\SuperMarioBros1XNA.pdb
