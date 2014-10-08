@@ -151,7 +151,8 @@ namespace SuperMarioBros1XNA
                 if (xmlReaderLevel.Name == "property")
                 {
                     String enemyType = xmlReaderLevel.GetAttribute("value");
-                    GameObject gameObject =  factory.createEnemy(enemyType, tempPos, this.content);
+                    GameObject gameObject = null;
+                    //GameObject gameObject =  factory.createEnemy(enemyType, tempPos, this.content);
                     this.enemies.Add(gameObject);
                     
                 }

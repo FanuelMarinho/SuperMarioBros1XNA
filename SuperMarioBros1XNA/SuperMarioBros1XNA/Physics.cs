@@ -9,16 +9,18 @@ namespace SuperMarioBros1XNA
 {
     public static class Physics
     {
-        public static Level level;
+        //public static Level level;
+        public static World world;
 
         // Only used for Y coordinate
         public static float gravity = 1100.0f;
         public static float friction = 400.0f;
 
 
-        public static void Init(Level l)
+        public static void Init(World w)
         {
-            level = l;
+            //level = l;
+            world = w;
         }
 
         public static void applyPhysics(GameObject gameObject, GameTime gameTime) 
@@ -54,8 +56,11 @@ namespace SuperMarioBros1XNA
                 pos2 = new Vector2(rectObject.Left - 1, rectObject.Bottom - 1);   
             }
                                     
-            int tile1 = level.getTileAtPosition(pos1);
-            int tile2 = level.getTileAtPosition(pos2);
+            //int tile1 = level.getTileAtPosition(pos1);
+            //int tile2 = level.getTileAtPosition(pos2);
+
+            int tile1 = world.getTileAtPosition(pos1);
+            int tile2 = world.getTileAtPosition(pos2);
            
             if((tile1 != 0) || (tile2 != 0))
             {
@@ -82,8 +87,12 @@ namespace SuperMarioBros1XNA
                 pos2 = new Vector2(rectObject.Right, rectObject.Bottom);
             }
 
-            int tile1 = level.getTileAtPosition(pos1);
-            int tile2 = level.getTileAtPosition(pos2);
+            //int tile1 = level.getTileAtPosition(pos1);
+            //int tile2 = level.getTileAtPosition(pos2);
+
+            int tile1 = world.getTileAtPosition(pos1);
+            int tile2 = world.getTileAtPosition(pos2);
+
 
             if ((tile1 != 0) || (tile2 != 0))
             //if(tile1 != 0)

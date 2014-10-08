@@ -29,6 +29,7 @@ namespace SuperMarioBros1XNA
             this.width = Width;
             this.height = Height;
             this.tileWidth = TileBase;
+            this.tileHeight = TileBase;
             this.tileMapTexture = ServiceLocator.TextureService().getTexture("TileMap");
             Tiles = new ushort[width, height, layers];
             clearMap();

@@ -64,7 +64,8 @@ namespace SuperMarioBros1XNA
                       
 
             SimplePhysics.Init(level);
-            Physics.Init(level);
+            Physics.Init(world);
+            //Physics.Init(level);
         }
 
         protected override void UnloadContent()
@@ -79,7 +80,8 @@ namespace SuperMarioBros1XNA
             base.Update(gameTime);
 
             player.Update(gameTime);
-            level.Update(gameTime);
+            world.Update(gameTime);
+            //level.Update(gameTime);
             Camera.Update(gameTime);
         }
 

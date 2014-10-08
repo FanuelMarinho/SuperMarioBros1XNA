@@ -21,6 +21,16 @@ namespace SuperMarioBros1XNA
             blocks = new List<object>();
         }
 
+        public int getTileAtPosition(int x, int y)
+        {
+            return tileMap.getTileSourceRectangle(x, y);
+        }
+
+        public int getTileAtPosition(Vector2 position)
+        {
+            return getTileAtPosition((int)position.X, (int)position.Y);
+        }
+
         public void Update(GameTime gameTime)
         { 
             foreach(GameObject enemie in enemies)
@@ -31,11 +41,12 @@ namespace SuperMarioBros1XNA
 
         public void Draw(SpriteBatch spriteBatch)
         {
+            tileMap.Draw(spriteBatch);
             foreach (GameObject enemie in enemies)
             {
                 enemie.Draw(spriteBatch);
             }
-            tileMap.Draw(spriteBatch);
+
         }
     }
 }
