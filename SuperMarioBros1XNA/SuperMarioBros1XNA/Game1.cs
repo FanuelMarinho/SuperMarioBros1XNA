@@ -19,8 +19,7 @@ namespace SuperMarioBros1XNA
 
         Player player;
         World world;
-        Level level;
-
+        
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -58,12 +57,13 @@ namespace SuperMarioBros1XNA
 
             IWorldLoader worldLoader = new XMLWorldLoader();
             world = worldLoader.LoadWorld("world11");
+            world.setPlayer(player);
             
-            level = new Level(tileMapTextureTemp, player, Content);
-            level.loadLevel("world11");
+            //level = new Level(tileMapTextureTemp, player, Content);
+            //level.loadLevel("world11");
                       
 
-            SimplePhysics.Init(level);
+            //SimplePhysics.Init(level);
             Physics.Init(world);
             //Physics.Init(level);
         }
@@ -93,6 +93,18 @@ namespace SuperMarioBros1XNA
             //level.Draw(spriteBatch);
             world.Draw(spriteBatch);
             player.Draw(spriteBatch);
+            //Draw the gameobject hitbox. For debug purposes
+
+            Texture2D test = new Texture2D(graphics.GraphicsDevice, 1, 1);
+            test.SetData(new[] { Color.White });
+            Rectangle rectTest = player.DrawHitBox;
+            spriteBatch.Draw(test, new Rectangle(rectTest.X, rectTest.Y, rectTest.Width, 1), Color.Red);  //Top
+            spriteBatch.Draw(test, new Rectangle(rectTest.X, rectTest.Y, 1, rectTest.Height), Color.Red); //Left
+            spriteBatch.Draw(test, new Rectangle(rectTest.Right, rectTest.Top, 1, rectTest.Height), Color.Red); //Right
+            spriteBatch.Draw(test, new Rectangle(rectTest.X, rectTest.Bottom, rectTest.Width, 1), Color.Red);
+
+
+            //End
             spriteBatch.End();
             base.Draw(gameTime);
         }

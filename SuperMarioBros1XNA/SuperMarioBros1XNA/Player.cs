@@ -56,18 +56,7 @@ namespace SuperMarioBros1XNA
                 animations[currentAnimation].CurrentFrameRectangle, Color.White, 0, Vector2.Zero, spriteEffect, 0);
 
 
-            //Draw the gameobject hitbox. For debug purposes
-            
-            /*Texture2D test = new Texture2D(graphics.GraphicsDevice, 1, 1);
-            test.SetData(new[] { Color.White });
-            Rectangle rectTest = DrawHitBox;
-            spriteBatch.Draw(test, new Rectangle(rectTest.X, rectTest.Y, rectTest.Width, 1), Color.Red);  //Top
-            spriteBatch.Draw(test, new Rectangle(rectTest.X, rectTest.Y, 1, rectTest.Height), Color.Red); //Left
-            spriteBatch.Draw(test, new Rectangle(rectTest.Right, rectTest.Top, 1, rectTest.Height), Color.Red); //Right
-            spriteBatch.Draw(test, new Rectangle(rectTest.X, rectTest.Bottom, rectTest.Width, 1), Color.Red);
-            */
 
-            //End
 
         }
 

@@ -12,13 +12,14 @@ namespace SuperMarioBros1XNA
     {
         private TileMap tileMap;
         private List<GameObject> enemies;
-        private List<object> blocks;
+        private List<Block> blocks;
+        private Player player;
 
-        public World(TileMap tileMap, List<GameObject> enemies)
+        public World(TileMap tileMap, List<GameObject> enemies, List<Block> blocks)
         {
             this.enemies = enemies;
             this.tileMap = tileMap;
-            blocks = new List<object>();
+            this.blocks = blocks; 
         }
 
         public int getTileAtPosition(int x, int y)
@@ -37,6 +38,27 @@ namespace SuperMarioBros1XNA
             {
                 enemie.Update(gameTime);
             }
+
+            foreach (Block block in blocks)
+            {
+                block.Update(gameTime);
+            }
+
+        }
+
+        public bool BlockCollision(Rectangle player)
+        {
+            bool collision = false;
+            foreach (Block block in blocks)
+            {
+                if (block.HitBox().Intersects(player)) 
+                {
+                    collision = true;
+                    break;
+                }
+                
+            }
+            return collision;
         }
 
         public void Draw(SpriteBatch spriteBatch)
@@ -47,6 +69,16 @@ namespace SuperMarioBros1XNA
                 enemie.Draw(spriteBatch);
             }
 
+            foreach(Block block in blocks)
+            {
+                block.Draw(spriteBatch);
+            }
+
+        }
+
+        public void setPlayer(Player player)
+        {
+            this.player = player;
         }
     }
 }

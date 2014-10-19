@@ -22,6 +22,38 @@ namespace SuperMarioBros1XNA
             return tileMap;
         }
 
+        private List<Block> loadBlocks(XmlReader xmlReader)
+        {
+            List<Block> blocks = new List<Block>();
+            FactoryBlock factory = new FactoryBlock();
+            Block tempBlock;
+
+            while(xmlReader.Read())
+            {
+                if ((!xmlReader.IsStartElement()) && (xmlReader.Name.ToString() == "objectgroup"))
+                {
+                    break;
+                }
+                else 
+                {
+                    if (xmlReader.IsStartElement())
+                    {
+                        if (xmlReader.Name == "object")
+                        {
+                            tempBlock = factory.createBlock(xmlReader);
+                            if(tempBlock != null)
+                            {
+                                blocks.Add(tempBlock);                             
+                            }
+                        }                    
+                    }
+
+                }
+            }
+            return blocks;
+        }
+
+
         private List<GameObject> loadeEnemies(XmlReader xmlReader)
         {
             List<GameObject> enemies = new List<GameObject>();
@@ -72,6 +104,7 @@ namespace SuperMarioBros1XNA
             TileMap tileMap = null;
 
             List<GameObject> enemies = new List<GameObject>();
+            List<Block> blocks = new List<Block>();
 
             using (XmlReader xmlReader = XmlReader.Create(path + worldName + extension))
             {
@@ -88,22 +121,28 @@ namespace SuperMarioBros1XNA
                                     tileMapHeight = Int32.Parse(xmlReader.GetAttribute("height"));
                                     tileMap = getTileMapFromXML(tileMapWidth, tileMapHeight, 16);
                                 }
-                                z++;
+
+                                ++z;
                                 break;
 
                             case "tile":
-                                ushort gid = ushort.Parse(xmlReader.GetAttribute("gid"));
-                                tileMap.setTileAt(x, y, z, gid);
-                                x++;
+                                
+                                if(z <= 2)
+                                {
+                                    ushort gid = ushort.Parse(xmlReader.GetAttribute("gid"));
+                                    tileMap.setTileAt(x, y, z, gid);
+                                    x++;
 
-                                if (x == tileMapWidth)
-                                {
-                                    x = 0;
-                                    y++;
-                                }
-                                if (y == tileMapHeight)
-                                {
-                                    y = 0;
+                                    if (x == tileMapWidth)
+                                    {
+                                        x = 0;
+                                        y++;
+                                    }
+                                    if (y == tileMapHeight)
+                                    {
+                                        y = 0;
+                                    }
+                                    
                                 }
                                 break;
                             
@@ -111,6 +150,10 @@ namespace SuperMarioBros1XNA
                                 if (xmlReader.GetAttribute("name") == "enemies")
                                 {
                                     enemies = loadeEnemies(xmlReader);
+                                }
+                                if (xmlReader.GetAttribute("name") == "blocks")
+                                {
+                                    blocks = loadBlocks(xmlReader);   
                                 }
                                 break;
 
@@ -120,11 +163,12 @@ namespace SuperMarioBros1XNA
 
                 }
 
-                world = new World(tileMap, enemies);
+                world = new World(tileMap, enemies, blocks );
             }
             return world;
             
         }
+
 
     }
 }

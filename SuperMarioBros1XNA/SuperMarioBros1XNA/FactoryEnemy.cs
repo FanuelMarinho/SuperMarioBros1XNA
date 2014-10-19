@@ -27,8 +27,6 @@ namespace SuperMarioBros1XNA
                     Dictionary<string, Animation> animationsGoomba = new Dictionary<string, Animation>();
                     animationsGoomba.Add("run", new Animation(textureRS.getTexture("goomba_run"), 16, 300f));
                     animationsGoomba.Add("die", new Animation(textureRS.getTexture("goomba_die"), 16, 300f));
-                    //animationsGoomba.Add("run", new Animation(content.Load<Texture2D>(@"Textures/goomba_run"), 16, 300f));
-                    //animationsGoomba.Add("die", new Animation(content.Load<Texture2D>(@"Textures/goomba_die"), 16, 300f));
                     gameObject = new Goomba(position, animationsGoomba);
 
                     break;
@@ -38,11 +36,7 @@ namespace SuperMarioBros1XNA
                     animationsKoopa.Add("run", new Animation(textureRS.getTexture("koopa_run"), 16, 300f));
                     animationsKoopa.Add("shell_in", new Animation(textureRS.getTexture("koopa_shell_in"), 16, 300f));
                     animationsKoopa.Add("shell_out", new Animation(textureRS.getTexture("koopa_shell_out"), 16, 300f));
-                    //animationsKoopa.Add("run", new Animation(content.Load<Texture2D>(@"Textures/koopa_run"), 16, 300f));
-                    //animationsKoopa.Add("shell_in", new Animation(content.Load<Texture2D>(@"Textures/koopa_shell_in"), 16, 300f));
-                    //animationsKoopa.Add("shell_out", new Animation(content.Load<Texture2D>(@"Textures/koopa_shell_out"), 16, 300f));
                     gameObject = new Koopa(position, animationsKoopa);
-
                     break;
             
             }

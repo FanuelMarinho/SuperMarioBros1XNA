@@ -19,7 +19,6 @@ namespace SuperMarioBros1XNA
 
         public static void Init(World w)
         {
-            //level = l;
             world = w;
         }
 
@@ -28,11 +27,9 @@ namespace SuperMarioBros1XNA
             float gravityApply = gravity * (float) gameTime.ElapsedGameTime.TotalSeconds;
             gameObject.VelocityY += gravityApply;
 
-            //Primeiro implementar a função de colisao horizontal... os X's da vida
             horizontalCollision(gameObject, gameTime);
             verticalCollision(gameObject, gameTime);
             
-            //gameObject.VelocityY = MathHelper.Clamp(gameObject.VelocityY, gameObject.VelocityY, 200);
             gameObject.Position += gameObject.Velocity * (float)gameTime.ElapsedGameTime.TotalSeconds;  
       
         }
@@ -55,14 +52,12 @@ namespace SuperMarioBros1XNA
                 pos1 = new Vector2(rectObject.Left - 1, rectObject.Top );
                 pos2 = new Vector2(rectObject.Left - 1, rectObject.Bottom - 1);   
             }
-                                    
-            //int tile1 = level.getTileAtPosition(pos1);
-            //int tile2 = level.getTileAtPosition(pos2);
-
+            
             int tile1 = world.getTileAtPosition(pos1);
             int tile2 = world.getTileAtPosition(pos2);
-           
-            if((tile1 != 0) || (tile2 != 0))
+            bool collide = world.BlockCollision(rectObject);
+
+            if ((tile1 != 0) || (tile2 != 0) || (collide))
             {
                gameObject.VelocityX = 0; 
             }
@@ -87,15 +82,11 @@ namespace SuperMarioBros1XNA
                 pos2 = new Vector2(rectObject.Right, rectObject.Bottom);
             }
 
-            //int tile1 = level.getTileAtPosition(pos1);
-            //int tile2 = level.getTileAtPosition(pos2);
-
             int tile1 = world.getTileAtPosition(pos1);
             int tile2 = world.getTileAtPosition(pos2);
 
-
-            if ((tile1 != 0) || (tile2 != 0))
-            //if(tile1 != 0)
+            bool collide = world.BlockCollision(rectObject);
+            if ((tile1 != 0) || (tile2 != 0) || (collide))
             {
                 if (gameObject.VelocityY > 0)
                 {
