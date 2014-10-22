@@ -17,7 +17,7 @@ namespace SuperMarioBros1XNA
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        Player player;
+        Mario player;
         World world;
         
         public Game1()
@@ -49,9 +49,7 @@ namespace SuperMarioBros1XNA
             SoundPlayer.Instance.Initialize(Content);
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            Texture2D tileMapTextureTemp = Content.Load<Texture2D>(@"Textures/TileMap");
-
-            player = new Player(new Vector2(30, 176), Content);
+            player = new Mario(new Vector2(30, 176), Content);
             //player = new Player(new Vector2(3050, 22), Content);
 
 
@@ -79,8 +77,9 @@ namespace SuperMarioBros1XNA
 
             base.Update(gameTime);
 
-            player.Update(gameTime);
             world.Update(gameTime);
+            player.Update(gameTime);
+            
             //level.Update(gameTime);
             Camera.Update(gameTime);
         }

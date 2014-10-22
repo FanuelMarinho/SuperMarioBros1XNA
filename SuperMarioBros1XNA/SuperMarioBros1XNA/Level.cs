@@ -21,7 +21,7 @@ namespace SuperMarioBros1XNA
         private Rectangle finish_area;
         private bool finish_game = false;
 
-        private Player player;
+        private Mario player;
         private ContentManager content;
 
         private List<GameObject> enemies;
@@ -31,7 +31,7 @@ namespace SuperMarioBros1XNA
 
         }
 
-        public Level(Texture2D tileMapTexture, Player player, ContentManager content)
+        public Level(Texture2D tileMapTexture, Mario player, ContentManager content)
         {
             this.tileMapTexture = tileMapTexture;
             this.player = player;

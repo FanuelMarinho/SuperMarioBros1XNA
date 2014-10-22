@@ -55,7 +55,7 @@ namespace SuperMarioBros1XNA
             
             int tile1 = world.getTileAtPosition(pos1);
             int tile2 = world.getTileAtPosition(pos2);
-            bool collide = world.BlockCollision(rectObject);
+            bool collide = world.BlockCollision(rectObject, gameObject);
 
             if ((tile1 != 0) || (tile2 != 0) || (collide))
             {
@@ -85,7 +85,7 @@ namespace SuperMarioBros1XNA
             int tile1 = world.getTileAtPosition(pos1);
             int tile2 = world.getTileAtPosition(pos2);
 
-            bool collide = world.BlockCollision(rectObject);
+            bool collide = world.BlockCollision(rectObject, gameObject);
             if ((tile1 != 0) || (tile2 != 0) || (collide))
             {
                 if (gameObject.VelocityY > 0)

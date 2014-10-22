@@ -57,11 +57,7 @@ namespace SuperMarioBros1XNA
             set { this.position = value; }
         }
 
-        public void kill() 
-        {  
-            this.dead = true; 
-        }
-
+        public abstract void onHit(GameObject gameObject);
         public abstract int Width{ get; }
         public abstract int Height{ get; }
 

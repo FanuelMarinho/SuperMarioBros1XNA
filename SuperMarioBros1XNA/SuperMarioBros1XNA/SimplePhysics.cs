@@ -29,7 +29,7 @@ namespace SuperMarioBros1XNA
         }
 
         #region Public Methods for GameObjects(Testing , not final)
-        public static void collision(Player player,  GameTime gameTime) 
+        public static void collision(Mario player,  GameTime gameTime) 
         {
            // player.
             player.Velocity += gravity;//* (float)gameTime.ElapsedGameTime.TotalSeconds; 
@@ -39,7 +39,7 @@ namespace SuperMarioBros1XNA
         }
 
 
-        public static void collision2(Player player, GameTime gameTime)
+        public static void collision2(Mario player, GameTime gameTime)
         {
             if (!player.isPlayerDead())
             {
@@ -169,7 +169,7 @@ namespace SuperMarioBros1XNA
             }
         }
 
-        private static void horizontalCollision(Player player, GameTime gameTime) 
+        private static void horizontalCollision(Mario player, GameTime gameTime) 
         {
             if (player.VelocityX > 0)
             {

@@ -9,7 +9,7 @@ namespace SuperMarioBros1XNA
 {
     public static class CollisionHandler
     {
-        public static void collisionBetweenTwo(Player player, GameObject gameObject2, GameTime gameTime)
+        public static void collisionBetweenTwo(Mario player, GameObject gameObject2, GameTime gameTime)
         {
             bool someoneIsDead = player.isPlayerDead() || gameObject2.dead;
             if (player.HitBox.Intersects(gameObject2.HitBox) && (!someoneIsDead))
@@ -21,7 +21,7 @@ namespace SuperMarioBros1XNA
                 }
                 else 
                 {
-                    gameObject2.kill();
+                    //gameObject2.
                 }
 
             }

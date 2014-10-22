@@ -34,6 +34,19 @@ namespace SuperMarioBros1XNA
             this.currentAnimation = "run";
         }
 
+        public override void onHit(GameObject gameObject)
+        {
+            if(gameObject is Mario)
+            {
+                this.dead = true;
+                currentAnimation = "die";
+            }
+            else if(gameObject is Koopa)
+            {
+                //TODO : fazer o goomba voar muito loko de ponta cabeça
+            }
+        }
+
         public override void Update(GameTime gameTime)
         {
             //throw new NotImplementedException();
@@ -69,23 +82,6 @@ namespace SuperMarioBros1XNA
 
             //spriteBatch.Draw(this.tempTexture, this.CameraPosition, Color.White);
         }
-
-        /*
-        public override int Width
-        {
-            get 
-            {
-                return this.tempTexture.Width;
-            }
-        }
-
-        public override int Height
-        {
-            get 
-            { 
-                return this.tempTexture.Height ;
-            }
-        }*/
 
         public override int Width
         {

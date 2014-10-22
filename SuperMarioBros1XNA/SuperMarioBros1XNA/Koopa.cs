@@ -14,6 +14,7 @@ namespace SuperMarioBros1XNA
         private float direction = 400.0f;
         private float maxSpeed = 60.0f;
         private string currentAnimation;
+        public bool insideShell;
         private SpriteEffects effect = SpriteEffects.FlipHorizontally;
 
         public Koopa(Vector2 position, Dictionary<string, Animation> animations)
@@ -21,6 +22,7 @@ namespace SuperMarioBros1XNA
             this.position = position;
             this.animations = animations;
             this.currentAnimation = "run";
+            insideShell = false;
         }
 
         public Koopa(Vector2 position,ContentManager content)
@@ -34,31 +36,61 @@ namespace SuperMarioBros1XNA
             this.currentAnimation = "run";
         }
 
+        public override void onHit(GameObject gameObject)
+        {
+            if(gameObject is Mario)
+            {
+                if(this.insideShell)
+                {
+                    //TODO: empurra o casco para a direção que o Mario esta indo
+                }
+                else 
+                {
+                    this.insideShell = true;
+                    currentAnimation = "shell_in";
+                }                
+            }            
+            if(gameObject is Koopa)
+            {
+                //faz ele voar muito loko tambem
+            }
+            
+        }
+
+
         public override void Update(Microsoft.Xna.Framework.GameTime gameTime)
         {
             if (!this.dead)
             {
-                if (Math.Abs(this.VelocityX) < Math.Abs(maxSpeed))
+                if(!this.insideShell)
                 {
-                    this.VelocityX += direction * (float)gameTime.ElapsedGameTime.TotalSeconds;
-                }
-                Physics.applyPhysics(this, gameTime);
-
-                if (this.VelocityX == 0.0f)
-                {
-                    this.direction *= -1;
-
-                    if (effect == SpriteEffects.None)
+                    if (Math.Abs(this.VelocityX) < Math.Abs(maxSpeed))
                     {
-                        effect = SpriteEffects.FlipHorizontally;
+                        this.VelocityX += direction * (float)gameTime.ElapsedGameTime.TotalSeconds;
                     }
-                    else 
+                    Physics.applyPhysics(this, gameTime);
+
+                    if (this.VelocityX == 0.0f)
                     {
-                        effect = SpriteEffects.None;
+                        this.direction *= -1;
+
+                        if (effect == SpriteEffects.None)
+                        {
+                            effect = SpriteEffects.FlipHorizontally;
+                        }
+                        else
+                        {
+                            effect = SpriteEffects.None;
+                        }
                     }
+
+                    if (!this.insideShell)
+                    {
+                        currentAnimation = "run";
+                    }
+
                 }
 
-                currentAnimation = "run";
             }
             else
             {

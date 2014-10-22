@@ -13,7 +13,7 @@ namespace SuperMarioBros1XNA
         private TileMap tileMap;
         private List<GameObject> enemies;
         private List<Block> blocks;
-        private Player player;
+        private Mario player;
 
         public World(TileMap tileMap, List<GameObject> enemies, List<Block> blocks)
         {
@@ -36,7 +36,9 @@ namespace SuperMarioBros1XNA
         { 
             foreach(GameObject enemie in enemies)
             {
+                enemyCollision(enemie, gameTime);
                 enemie.Update(gameTime);
+
             }
 
             foreach (Block block in blocks)
@@ -46,17 +48,52 @@ namespace SuperMarioBros1XNA
 
         }
 
-        public bool BlockCollision(Rectangle player)
+        private void enemyCollision(GameObject enemy, GameTime gameTime)
+        {
+            if((enemy.HitBox.Intersects(player.HitBox)) && (!enemy.dead))
+            {
+                if(player.HitBox.Top < enemy.HitBox.Top)
+                {
+                    enemy.onHit(player);
+                }
+                else 
+                {
+                    if(enemy is Koopa)
+                    {
+                        Koopa koopa = (Koopa)enemy;
+                        if (koopa.insideShell)
+                        {
+                            //sei la, depois eu vejo
+                        }
+                        else 
+                        {
+                            player.kill(gameTime);
+                        }
+                    }
+                    
+                }
+
+            }
+        }
+
+        public bool BlockCollision(Rectangle gameObjectRect, GameObject gameObject)
         {
             bool collision = false;
             foreach (Block block in blocks)
             {
-                if (block.HitBox().Intersects(player)) 
+                if (block.HitBox().Intersects(gameObjectRect)) 
                 {
                     collision = true;
+                    if(gameObject is Mario)
+                    {
+                        //Pretty bug, but will be use for now
+                        if( (gameObject.VelocityY < 0)  && (block.HitBox().Bottom >= gameObject.HitBox.Top) )
+                        {
+                            block.onHit((Mario) gameObject);
+                        }
+                    }                    
                     break;
-                }
-                
+                }                
             }
             return collision;
         }
@@ -76,7 +113,7 @@ namespace SuperMarioBros1XNA
 
         }
 
-        public void setPlayer(Player player)
+        public void setPlayer(Mario player)
         {
             this.player = player;
         }
