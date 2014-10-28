@@ -57,7 +57,7 @@ namespace SuperMarioBros1XNA
             set { this.position = value; }
         }
 
-        public abstract void onHit(GameObject gameObject);
+        public abstract void onHit(GameObject gameObject, GameTime gameTime);
         public abstract int Width{ get; }
         public abstract int Height{ get; }
 

@@ -12,9 +12,11 @@ namespace SuperMarioBros1XNA
     {
         private Dictionary<String, Animation> animations;
         private float direction = 400.0f;
+        private float shellDirection = 15000.0f;
         private float maxSpeed = 60.0f;
         private string currentAnimation;
-        public bool insideShell;
+        public bool insideShell = false;
+        public bool isShellRunning = false;
         private SpriteEffects effect = SpriteEffects.FlipHorizontally;
 
         public Koopa(Vector2 position, Dictionary<string, Animation> animations)
@@ -36,13 +38,28 @@ namespace SuperMarioBros1XNA
             this.currentAnimation = "run";
         }
 
-        public override void onHit(GameObject gameObject)
+
+
+        public override void onHit(GameObject gameObject, GameTime gameTime)
         {
             if(gameObject is Mario)
             {
                 if(this.insideShell)
                 {
                     //TODO: empurra o casco para a direção que o Mario esta indo
+                    if (!isShellRunning)
+                    {
+                        isShellRunning = true;
+                        if(gameObject.HitBox.Center.X > this.HitBox.Center.X)
+                        {
+                            this.shellDirection *= -1;
+                        }
+                    }
+                    else 
+                    {
+                        isShellRunning = false;
+                        this.VelocityX = 0.0f;
+                    }
                 }
                 else 
                 {
@@ -62,6 +79,7 @@ namespace SuperMarioBros1XNA
         {
             if (!this.dead)
             {
+
                 if(!this.insideShell)
                 {
                     if (Math.Abs(this.VelocityX) < Math.Abs(maxSpeed))
@@ -89,6 +107,18 @@ namespace SuperMarioBros1XNA
                         currentAnimation = "run";
                     }
 
+                }
+                else 
+                {
+                    if (isShellRunning)
+                    {
+                        this.VelocityX = shellDirection * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                        Physics.applyPhysics(this, gameTime);
+                        if (this.VelocityX == 0.0f)
+                        {
+                            this.shellDirection *= -1;
+                        }
+                    }
                 }
 
             }

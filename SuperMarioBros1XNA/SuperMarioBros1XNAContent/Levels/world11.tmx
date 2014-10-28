@@ -3,12 +3,6 @@
  <tileset firstgid="1" name="tilesetmariobros" tilewidth="16" tileheight="16">
   <image source="tilesetmariobros.png" width="528" height="448"/>
  </tileset>
- <animation>
-    <frame tileid="26" duration="200"/>
-    <frame tileid="25" duration="200"/>
-    <frame tileid="24" duration="300"/>
-    <frame tileid="25" duration="200"/>
- </animation>
  <layer name="background" width="212" height="14">
   <data>
    <tile gid="697"/>
@@ -11898,19 +11892,19 @@
   </data>
  </layer>
  <objectgroup name="enemies">
-  <object x="256" y="96" width="16" height="16">
+  <object x="517" y="156" width="16" height="16">
    <properties>
     <property name="type" value="goomba"/>
    </properties>
   </object>
-  <object x="464" y="128" width="16" height="16">
+  <object x="555" y="157" width="16" height="16">
    <properties>
     <property name="type" value="koopa"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup name="level">
-  <object name="finish_point" x="3185" y="37" width="7" height="138"/>
+  <object name="spawn_location" x="624" y="112" width="16" height="16"/>
  </objectgroup>
  <objectgroup name="blocks">
   <object type="question_coin" x="256" y="128" width="16" height="16">

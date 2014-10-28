@@ -14,12 +14,19 @@ namespace SuperMarioBros1XNA
         private List<GameObject> enemies;
         private List<Block> blocks;
         private Mario player;
+        private Vector2 marioSpawnLocation;
 
-        public World(TileMap tileMap, List<GameObject> enemies, List<Block> blocks)
+        public World(TileMap tileMap, List<GameObject> enemies, List<Block> blocks, Vector2 marioLocation)
         {
             this.enemies = enemies;
             this.tileMap = tileMap;
-            this.blocks = blocks; 
+            this.blocks = blocks;
+            this.marioSpawnLocation = marioLocation;
+        }
+
+        public void setMarioLocation(Vector2 vect)
+        {
+            marioSpawnLocation = vect;
         }
 
         public int getTileAtPosition(int x, int y)
@@ -37,7 +44,9 @@ namespace SuperMarioBros1XNA
             foreach(GameObject enemie in enemies)
             {
                 enemyCollision(enemie, gameTime);
+                enemyCollision2(enemie, gameTime);
                 enemie.Update(gameTime);
+
 
             }
 
@@ -48,13 +57,27 @@ namespace SuperMarioBros1XNA
 
         }
 
+         private void enemyCollision2(GameObject enemy, GameTime gameTime)
+         {
+             foreach (GameObject enemy2 in enemies)
+             {
+                 if (enemy2 == enemy)
+                     continue;
+                 if (enemy.HitBox.Intersects(enemy2.HitBox) && (!enemy2.dead))
+                 {
+                     enemy2.onHit(enemy, gameTime);
+                 }
+             }
+         }
+
         private void enemyCollision(GameObject enemy, GameTime gameTime)
         {
-            if((enemy.HitBox.Intersects(player.HitBox)) && (!enemy.dead))
+            if ((enemy.HitBox.Intersects(player.HitBox)) && (!enemy.dead) && (!player.dead))
             {
                 if(player.HitBox.Top < enemy.HitBox.Top)
                 {
-                    enemy.onHit(player);
+                    player.jump(-12000, gameTime);
+                    enemy.onHit(player, gameTime);
                 }
                 else 
                 {
@@ -64,6 +87,7 @@ namespace SuperMarioBros1XNA
                         if (koopa.insideShell)
                         {
                             //sei la, depois eu vejo
+                            player.kill(gameTime);
                         }
                         else 
                         {
@@ -116,6 +140,10 @@ namespace SuperMarioBros1XNA
         public void setPlayer(Mario player)
         {
             this.player = player;
+            if(marioSpawnLocation != null)
+            {
+                this.player.Position = marioSpawnLocation;
+            }
         }
     }
 }

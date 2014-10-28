@@ -75,6 +75,9 @@ namespace SuperMarioBros1XNA
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
+            if (Keyboard.GetState(PlayerIndex.One).IsKeyDown(Keys.P))
+                player.revive();
+
             base.Update(gameTime);
 
             world.Update(gameTime);

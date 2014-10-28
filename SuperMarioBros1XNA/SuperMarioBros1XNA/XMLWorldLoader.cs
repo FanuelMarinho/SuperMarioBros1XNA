@@ -105,6 +105,7 @@ namespace SuperMarioBros1XNA
 
             List<GameObject> enemies = new List<GameObject>();
             List<Block> blocks = new List<Block>();
+            Vector2 spawn_location = new Vector2();
 
             using (XmlReader xmlReader = XmlReader.Create(path + worldName + extension))
             {
@@ -156,14 +157,21 @@ namespace SuperMarioBros1XNA
                                     blocks = loadBlocks(xmlReader);   
                                 }
                                 break;
+                            case "object":
+                                if (xmlReader.GetAttribute("name") == "spawn_location")
+                                {
+                                    spawn_location.X = Int32.Parse(xmlReader.GetAttribute("x"));
+                                    spawn_location.Y = Int32.Parse(xmlReader.GetAttribute("y"));
+                                }
+                                
+                                break;
 
                         }
 
                     }
 
                 }
-
-                world = new World(tileMap, enemies, blocks );
+                world = new World(tileMap, enemies, blocks, spawn_location);
             }
             return world;
             

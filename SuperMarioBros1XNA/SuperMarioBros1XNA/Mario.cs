@@ -42,7 +42,7 @@ namespace SuperMarioBros1XNA
             this.velocity.Y = -11000 * (float)gameTime.ElapsedGameTime.TotalSeconds;
         }
 
-        public override void onHit(GameObject gameObject)
+        public override void onHit(GameObject gameObject, GameTime gameTime)
         {
             this.dead = true;
         }
@@ -52,6 +52,17 @@ namespace SuperMarioBros1XNA
             return this.dead;
         }
 
+
+        public void jump(float jumpValue, GameTime gameTime)
+        {
+            this.velocity.Y = jumpValue * (float)gameTime.ElapsedGameTime.TotalSeconds;
+        }
+
+        //DEBUG METHODS
+        public void revive()
+        {
+            this.dead = false;
+        }
 
         public override void Draw(SpriteBatch spriteBatch)
         {
@@ -100,8 +111,10 @@ namespace SuperMarioBros1XNA
 
             if (keyboard.IsKeyDown(Keys.Space) && (onGround) && (previousKeyBoardState.IsKeyUp(Keys.Space)) )
             {
-                this.velocity.Y = -15000  * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                jump(-15000, gameTime);
                 SoundPlayer.Instance.playSound(SoundPlayer.JUMP_SMALL);
+                //this.velocity.Y = -15000  * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                //SoundPlayer.Instance.playSound(SoundPlayer.JUMP_SMALL);
             }
             else if (keyboard.IsKeyDown(Keys.Space) && (!onGround) && (VelocityY < 0))
             {
