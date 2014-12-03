@@ -20,6 +20,7 @@ namespace SuperMarioBros1XNA
         private KeyboardState previousKeyBoardState;
         private float maxSpeedX = 6100.0f;
         private float speedX = 400.0f;
+        private bool BigMario = false;
 
         //public bool onGround = false;
         public Mario(Vector2 position, ContentManager content) 
@@ -34,6 +35,16 @@ namespace SuperMarioBros1XNA
             this.spriteEffect = SpriteEffects.None;
             //this.velocity = new Vector2(0, 20);
             this.position = position;
+        }
+
+        public void growUp()
+        {
+            this.BigMario = true;
+        }
+
+        public void growDown()
+        {
+            this.BigMario = false;
         }
 
         public void kill(GameTime gameTime) 

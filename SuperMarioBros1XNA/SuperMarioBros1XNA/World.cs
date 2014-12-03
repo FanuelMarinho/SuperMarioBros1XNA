@@ -46,8 +46,6 @@ namespace SuperMarioBros1XNA
                 enemyCollision(enemie, gameTime);
                 enemyCollision2(enemie, gameTime);
                 enemie.Update(gameTime);
-
-
             }
 
             foreach (Block block in blocks)
@@ -99,6 +97,28 @@ namespace SuperMarioBros1XNA
 
             }
         }
+
+        private bool intersectVecRect(Vector2 vect, Rectangle rect)
+        {
+            return (vect.X >= rect.X) && (vect.Y >= rect.Y) && (vect.X <= rect.Right) && (vect.Y <= rect.Bottom);
+        }
+
+        public bool BlockCollision(Vector2 position, GameObject gameObject)
+        {
+            bool collision = false;
+            
+            foreach (Block block in blocks)
+            {
+                if(intersectVecRect(position, block.HitBox()))
+                {
+                    collision = true;
+                    break;
+                }
+            }
+
+            return collision;
+        }
+
 
         public bool BlockCollision(Rectangle gameObjectRect, GameObject gameObject)
         {

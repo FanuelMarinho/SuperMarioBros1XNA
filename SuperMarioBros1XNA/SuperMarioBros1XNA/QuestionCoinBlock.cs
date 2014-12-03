@@ -25,6 +25,7 @@ namespace SuperMarioBros1XNA
         private ushort emptyGid;
         private TiledAnimation[] tilesAnimation;
         private float currentDuration;
+        private Vector2 originalPosition;
 
         public QuestionCoinBlock(ushort gid,Rectangle hitBox , int coins)
         {
@@ -42,12 +43,13 @@ namespace SuperMarioBros1XNA
             this.emptyGid = gid;
             this.baseGid = tilesAnimation[0].Gid;
             this.currentDuration = tilesAnimation[0].Duration;
+            this.originalPosition = new Vector2(hitBox.X, hitBox.Y);
 
         }
 
         public override void Update(GameTime gameTime)
         {
-            this.currentDuration -= (float) gameTime.ElapsedGameTime.TotalSeconds;
+            this.currentDuration -= (float)gameTime.ElapsedGameTime.Milliseconds;
             if(this.currentDuration <= 0)
             {
                 currentIndex++;
@@ -58,18 +60,24 @@ namespace SuperMarioBros1XNA
                 this.baseGid = this.tilesAnimation[currentIndex].Gid;
                 this.currentDuration = this.tilesAnimation[currentIndex].Duration;
             }
+
+            if (this.hitBox.Y != this.originalPosition.Y)
+            {
+                //this.hitBox.Y = (int)this.originalPosition.Y;
+                this.hitBox.Y += 1;
+            }
         }
 
         public override void onHit(Mario player)
         {
-
+            this.hitBox.Offset(0, -7);
         }
 
 
         public override void Draw(SpriteBatch spriteBatch)
         {
             Texture2D tileTexture = ServiceLocator.TextureService().getTexture("TileMap");
-            Rectangle sourceRect = TileUtils.getTileSourceRectangle(this.baseGid);
+            Rectangle sourceRect = TileUtils.getTileSourceRectangle(this.baseGid + 1);
             spriteBatch.Draw(tileTexture, CameraPosition, sourceRect, Color.White);
         }
     }

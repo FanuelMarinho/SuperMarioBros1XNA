@@ -27,8 +27,9 @@ namespace SuperMarioBros1XNA
             float gravityApply = gravity * (float) gameTime.ElapsedGameTime.TotalSeconds;
             gameObject.VelocityY += gravityApply;
 
-            horizontalCollision(gameObject, gameTime);
             verticalCollision(gameObject, gameTime);
+            
+            horizontalCollision(gameObject, gameTime);
             
             gameObject.Position += gameObject.Velocity * (float)gameTime.ElapsedGameTime.TotalSeconds;  
       
@@ -41,21 +42,26 @@ namespace SuperMarioBros1XNA
 
             Vector2 pos1;
             Vector2 pos2;
+            Vector2 pos1Block;
 
             if(gameObject.VelocityX > 0)
             {
                 pos1 = new Vector2(rectObject.Right + 1, rectObject.Top);
-                pos2 = new Vector2(rectObject.Right + 1, rectObject.Bottom - 1 );    
+                pos2 = new Vector2(rectObject.Right + 1, rectObject.Bottom - 1 );
+                pos1Block = new Vector2(rectObject.Right, rectObject.Center.Y);
             }
             else
             {
                 pos1 = new Vector2(rectObject.Left - 1, rectObject.Top );
-                pos2 = new Vector2(rectObject.Left - 1, rectObject.Bottom - 1);   
+                pos2 = new Vector2(rectObject.Left - 1, rectObject.Bottom - 1);
+                pos1Block = new Vector2(rectObject.Left, rectObject.Center.Y);
             }
             
             int tile1 = world.getTileAtPosition(pos1);
             int tile2 = world.getTileAtPosition(pos2);
-            bool collide = world.BlockCollision(rectObject, gameObject);
+            //bool collide = world.BlockCollision(rectObject, gameObject);
+            bool collide = world.BlockCollision(pos1Block, gameObject);
+
 
             if ((tile1 != 0) || (tile2 != 0) || (collide))
             {

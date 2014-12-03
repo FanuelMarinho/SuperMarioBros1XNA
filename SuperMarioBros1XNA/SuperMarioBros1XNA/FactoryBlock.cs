@@ -35,9 +35,9 @@ namespace SuperMarioBros1XNA
                 case Blocks.NORMAL:
                     blockObject = createNormalBlock(xmlReader, blockRect);
                     break;
-                //case Blocks.QUESTION_COIN:
-                //    blockObject = createQuestionCoinBlock(xmlReader, blockRect);
-                //    break;
+                case Blocks.QUESTION_COIN:
+                    blockObject = createQuestionCoinBlock(xmlReader, blockRect);
+                    break;
             }
             return blockObject;
         }
@@ -46,6 +46,26 @@ namespace SuperMarioBros1XNA
         {
             ushort gid = 0;
             int coins = 0;
+
+            while (xmlReader.Read())
+            {
+                if (xmlReader.Name == "property")
+                {
+                    String attribute = xmlReader.GetAttribute("name");
+                    switch (attribute)
+                    {
+                        case "gid":
+                            gid = ushort.Parse(xmlReader.GetAttribute("value"));
+                            break;
+                    }
+
+                }
+
+                if ((xmlReader.Name == "properties") && (!xmlReader.IsStartElement()))
+                {
+                    break;
+                }
+            }
 
 
             return new QuestionCoinBlock(gid, blockRect, coins);
